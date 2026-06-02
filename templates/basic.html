@@ -1,23 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-<script>
-function submitQuestion() {
-    const question = document.getElementById('question').value;
-    // Here you would typically send the question to your Flask backend
-    console.log(question);
-}
-</script>
+
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>user question </title>
 </head>
 <body>
-    <form action="/submit" method="post">
+    <form action="/" method="post">
 
     <h1>user question </h1>
-    <textarea rows="5" id="question" placeholder="Enter your question here"></textarea>
-     <button onclick="submitQuestion()">Submit</button>
+    <textarea name="question" rows="5" id="question" placeholder="Enter your question here"></textarea>
+     <button >Submit</button>
      </form>
 </body>
 </html>
